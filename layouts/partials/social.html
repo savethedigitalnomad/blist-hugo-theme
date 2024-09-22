@@ -498,6 +498,26 @@
       </li>
       {{ end }}
 
+      {{ if eq .website "Spotify" }}
+      <li>
+        <a
+          href="{{ .url }}"
+          target="_blank"
+          rel="noopener"
+          aria-label="Spotify"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <circle cx="12" cy="12" r="9" />
+          <path d="M8 15c3 -1 6 -1 9 .5" />
+          <path d="M7.5 12c3 -1 6.5 -1 10 .5"/>
+          <path d="M7 9c3.5 -1 8 -1 11 .5"/>
+        </svg>
+        </a>
+      </li>
+      {{ end }}
+
       {{ if eq .website "email" }}
       <li>
         <a
